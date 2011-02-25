@@ -103,9 +103,13 @@ fi
 
 alias sshkan='ssh malcubi@132.248.202.193'
 alias sshkanG='ssh -Y malcubi@132.248.202.193'
-alias sim=$HOME/Ollin/Cactus/simfactory/sim
-alias pytwit='/home/josemanuel/git/pytwit/pytwit.py'
+alias sim=$HOME/Ollin/ETK/Cactus/simfactory/sim
+#alias pytwit='/home/josemanuel/git/pytwit/pytwit.py'
 
 
 #environmentvariables
 export KANB=malcubi@132.248.202.193:/global/malcubi/josemanuel
+
+alias xmaple='export AWT_TOOLKIT=MToolkit && xmaple'
+
+export PATH=$PATH:/home/josemanuel/Maple/bin/

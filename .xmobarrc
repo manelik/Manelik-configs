@@ -1,0 +1,21 @@
+Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
+       , bgColor = "black"
+       , fgColor = "green"
+       , position = Static { xpos = 0 , ypos = 0, width = 922, height = 16 }
+       , lowerOnStart = True
+       , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Swap [] 10
+		    , Run Com "sh" ["/home/manelik/bin/30date.sh"] "date" 10
+                    , Run StdinReader
+                    , Run Network "wlan0" ["-L","0","-H","32","--normal","green","--high","red"] 10
+		    , Run Battery ["-t","Batt: <left>"] 100
+                    , Run Com "sh" ["/home/manelik/bin/gmail.sh"] "mail" 1200
+                    , Run Com "sh" ["/home/manelik/bin/volmon.sh"] "volmon" 10
+		    , Run Com "strex" ["-xb"] "strex" 1200
+		    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{New:%mail%|%strex%|%cpu%|%memory%|%wlan0%|Vol:%volmon%|%battery%
+         <fc=#ee9a00>%date%</fc> "
+       }
