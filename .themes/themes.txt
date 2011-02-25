@@ -1,0 +1,12 @@
+Alphacube GTK 0.5
+Clearlooks-DarkBlue
+Clearlooks-DarkOrange
+evil_mac
+GTK2-TIshForClearlooks
+marble-look
+MiniAmbiance
+Neutronium DeepBlack
+Neutronium Gilouche
+Polycarbonate-One
+themes.txt
+T-ish-Brushed-shaded-bright-blue
