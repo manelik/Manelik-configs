@@ -1,0 +1,76 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+#xmodmap "/home/manelik/.Xmodmap"
+setxkbmap -option terminate:ctrl_alt_bksp
+
+# Set bg over style
+
+fbsetbg -l
+
+# Own gtkrc file
+
+export GTK2_RC_FILES=$HOME/.fluxbox/gtkrc
+
+# Nice ooffice
+
+export OOO_FORCE_DESKTOP=gnome
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+#gnome-keyring-daemon &
+eval `gnome-keyring-daemon -s`
+export GNOME_KEYRING_CONTROL
+export GNOME_KEYRING_PID
+nm-applet &
+
+#gnome-terminal --geometry=80x20 &
+
+#tilda stuff
+# remove  .tilda/config_0
+cp .tilda/back  .tilda/config_0 
+tilda &
+thunar &
+
+#dontzap -d && catastrophe &
+
+#turnaround to pulseaudio bug
+
+#pulseaudio -k
+
+
+conky &
+
+wmmatrix &
+wmmand &
+#wmfire &
+wmbattery &
+wmcalclock -30 -tc white&
+#Mixer.app &
+#volume.app &
+wmix &
+wmblob &
+
+
+# xrandr --output LVDS --mode 720x400
+# xrandr --output LVDS --mode 1024x600
+# Set default volume
+
+#amixer sset Master,0 50%
+
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+exec fluxbox -log "/home/manelik/.fluxbox/log"

@@ -1,0 +1,53 @@
+#
+# GTKRC FILE FOR FLUXBOX
+#
+
+
+# Style options
+
+
+# Default themes /usr/share/themes/
+
+#AgingGorilla	 Amaranth	Ambiance	Atlanta	Bright		Clearlooks	ClearlooksClassic
+#Crux		 Darklooks	Default		Dust	Dust Sand	Emacs		Esco
+#Galaxyxs	 Glider		Glossy		Gorilla	HighContrastInverse		
+#HighContrastLargePrintInverse
+#Industrial	 Inverted	Lush		Metabox	Mist		New Wave	New Wave Dark Menus
+#Nuvola		 Nuvola-old	Radiance	Raleigh	Redmond	Simple	SphereCrystal	ThinIxsce	Unity	
+#Wasp
+
+
+
+
+include "/usr/share/themes/Ambiance/gtk-2.0/gtkrc"
+
+
+# Installed themes
+
+#Alphacube GTK 0.5      GTK2-TIshForClearlooks  Polycarbonate-One
+#Clearlooks-DarkBlue    marble-look             T-ish-Brushed-shaded-bright-blue
+#Clearlooks-DarkOrange  Neutronium DeepBlack	MiniAmbiance
+#evil_mac               Neutronium Gilouche
+
+# Note that GTK2_TIshForClearLooks is not a theme, but there 
+# are several themes contained in that folder
+
+include "/home/manelik/.themes/MiniAmbiance/gtk-2.0/gtkrc"
+#include "/home/manelik/.themes/GTK2-TIshForClearlooks/tish/gtk-2.0/gtkrc"
+
+
+# Icons
+
+#Oxygenblack	OSX
+
+gtk-icon-theme-name = "Oxygenblack"
+
+
+# FontSize it works!!!
+
+style "font"
+{
+font_name = "Sans Serif 8"
+}
+widget_class "*" style "font"
+gtk-font-name = "Sans Serif 8" 

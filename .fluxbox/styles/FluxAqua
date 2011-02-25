@@ -1,0 +1,259 @@
+! FluxAqua 1.4
+! A (pixmap) theme for Fluxbox
+! 2003 (c) Proud (like a god), aka Paul Bedborough
+! Originated from the blueflux theme, with alterations to port XAquaX from Enlightenment to Fluxbox.
+
+! GENERAL SETTINGS
+
+borderColor:				#DEDEDE
+borderWidth:				1
+bevelWidth:					0
+handleWidth:				4
+
+!rootCommand:				bsetbg -solid rgb:78/91/B0
+!#7783BD
+
+! FONTS
+
+*font:					Andale-10
+*.justify:					center
+
+! TOOLBAR
+
+toolbar:		flat gradient vertical pixmap
+toolbar.pixmap:		.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+toolbar.color:		#FFFFFF
+toolbar.colorTo:	#DEDEDE
+toolbar.borderWidth:	0
+toolbar.borderColor:	#DEDEDE
+toolbar.bevelWidth:	0
+toolbar.shaped: 	true
+toolbar.alpha:		255
+toolbar.height:		20
+
+! CLOCK
+
+!toolbar.clock.font:
+!toolbar.clock.justify:
+toolbar.clock:					flat gradient vertical pixmap
+toolbar.clock.pixmap:				.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+toolbar.clock.color:				#FFFFFF
+toolbar.clock.colorTo:				#DEDEDE
+toolbar.clock.textColor:			black
+toolbar.clock.borderWidth:			1
+toolbar.clock.borderColor:			#DEDEDE
+
+! WORKSPACE NAME
+
+!toolbar.workspace.font:
+!toolbar.workspace.justify:
+toolbar.workspace:				flat gradient vertical pixmap
+toolbar.workspace.pixmap:			.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+toolbar.workspace.color:			#FFFFFF
+toolbar.workspace.colorTo:			#DEDEDE
+toolbar.workspace.textColor:		black
+toolbar.workspace.borderWidth:		1
+toolbar.workspace.borderColor:		#DEDEDE
+
+! ICONBAR
+
+toolbar.iconbar.borderWidth:				0
+toolbar.iconbar.borderColor:				#DEDEDE
+toolbar.iconbar.empty:				flat gradient vertical pixmap
+toolbar.iconbar.empty.pixmap:			.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+toolbar.iconbar.empty.color:			#FFFFFF
+toolbar.iconbar.empty.colorTo:			#DEDEDE
+
+toolbar.iconbar.focused.borderWidth:		0
+toolbar.iconbar.focused.borderColor:		#DEDEDE
+toolbar.iconbar.focused:			flat gradient vertical pixmap
+toolbar.iconbar.focused.pixmap:			.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+toolbar.iconbar.focused.color:			#FFFFFF
+toolbar.iconbar.focused.colorTo:		#DEDEDE
+toolbar.iconbar.focused.textColor:		black
+!toolbar.iconbar.focused.font:
+!toolbar.iconbar.focused.justify:
+
+toolbar.iconbar.unfocused.borderWidth:		0
+toolbar.iconbar.unfocused.borderColor:		#DEDEDE
+toolbar.iconbar.unfocused:			flat gradient vertical pixmap
+toolbar.iconbar.unfocused.pixmap:		.fluxbox/pixmaps/fluxaqua/title_unfocused.xpm
+toolbar.iconbar.unfocused.color:		#A2A2A2
+toolbar.iconbar.unfocused.colorTo:		#A2A2A2
+toolbar.iconbar.unfocused.textColor:	#DEDEDE
+!toolbar.iconbar.unfocused.font:
+!toolbar.iconbar.unfocused.justify:
+
+! MENU
+
+
+menu.roundCorners: TopRight TopLeft BottomRight BottomLeft
+
+menu.title:						flat gradient vertical pixmap
+menu.title.pixmap:					.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+menu.title.color:					#FFFFFF
+menu.title.colorTo:					#DEDEDE
+menu.title.textColor:				black
+!menu.title.font:
+!menu.title.justify:
+
+menu.frame:						flat solid
+!menu.frame.pixmap:
+menu.frame.color:					#FFFFFF
+!menu.frame.colorTo:
+menu.frame.textColor:				black
+!menu.frame.font:
+menu.frame.justify:					left
+menu.frame.disableColor:			#A2A2A2
+
+menu.hilite:					flat solid
+!menu.hilite.pixmap:
+menu.hilite.color:					#8799B0
+!menu.hilite.colorTo:
+menu.hilite.textColor:				white
+
+!menu.submenu.pixmap:
+menu.bullet:						triangle
+menu.bullet.position:				right
+!menu.selected.pixmap:				.fluxbox/pixmaps/fluxaqua/.xpm
+!menu.unselected.pixmap:				.fluxbox/pixmaps/fluxaqua/.xpm
+
+! WINDOW BUTTONS
+
+window.button.focus:			flat gradient vertical
+!window.button.focus.pixmap:
+window.button.focus.color:			#FFFFFF
+window.button.focus.colorTo:		#DEDEDE
+window.button.focus.picColor:		black
+
+window.button.unfocus:			flat gradient vertical
+!window.button.unfocus.pixmap:
+window.button.unfocus.color:		#FFFFFF
+window.button.unfocus.colorTo:		#DEDEDE
+window.button.unfocus.picColor:		#727272
+
+!Must be (false) gradient not solid because the focused scheme is a (true) gradient
+window.button.pressed:			flat gradient vertical
+!window.button.pressed.pixmap:
+window.button.pressed.color:		#A2A2A2
+window.button.pressed.colorTo:		#A2A2A2
+
+window.close.pixmap:		.fluxbox/pixmaps/fluxaqua/close.xpm
+window.close.pressed.pixmap:	.fluxbox/pixmaps/fluxaqua/close_pressed.xpm
+window.close.unfocus.pixmap:	.fluxbox/pixmaps/fluxaqua/button_unfocused.xpm
+window.maximize.pixmap:		.fluxbox/pixmaps/fluxaqua/maximize.xpm
+window.maximize.pressed.pixmap:	.fluxbox/pixmaps/fluxaqua/maximize_pressed.xpm
+window.maximize.unfocus.pixmap:	.fluxbox/pixmaps/fluxaqua/button_unfocused.xpm
+window.iconify.pixmap:		.fluxbox/pixmaps/fluxaqua/iconify.xpm
+window.iconify.pressed.pixmap:	.fluxbox/pixmaps/fluxaqua/iconify_pressed.xpm
+window.iconify.unfocus.pixmap:	.fluxbox/pixmaps/fluxaqua/button_unfocused.xpm
+window.stick.pixmap:		.fluxbox/pixmaps/fluxaqua/stick.xpm
+window.stick.pressed.pixmap:	.fluxbox/pixmaps/fluxaqua/stick_pressed2.xpm
+window.stick.unfocus.pixmap:	.fluxbox/pixmaps/fluxaqua/button_unfocused.xpm
+window.stuck.pixmap:			.fluxbox/pixmaps/fluxaqua/stuck2.xpm
+window.stuck.unfocus.pixmap:	.fluxbox/pixmaps/fluxaqua/stuck_unfocused2.xpm
+
+!window.shade.pixmap:				.fluxbox/pixmaps/fluxaqua/stick.xpm
+!window.shade.pressed.pixmap:		.fluxbox/pixmaps/fluxaqua/stuck.xpm
+!window.shade.unfocus.pixmap:		.fluxbox/pixmaps/fluxaqua/stuck_unfocused.xpm
+
+! WINDOW: FOCUSED AND UNFOCUS
+
+window.roundCorners: TopRight TopLeft BottomRight BottomLeft
+
+window.alpha:					255
+
+!window.font:
+!window.justify:
+
+window.title.height:			20
+window.title.focus:				flat gradient vertical pixmap
+window.title.focus.pixmap:			.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+window.title.focus.color:			#FFFFFF
+window.title.focus.colorTo:			#DEDEDE
+window.title.unfocus:			flat gradient vertical pixmap
+window.title.unfocus.pixmap:		.fluxbox/pixmaps/fluxaqua/title_unfocused.xpm
+window.title.unfocus.color:			#A2A2A2
+window.title.unfocus.colorTo:		#A2A2A2
+
+window.label.focus:				flat gradient vertical pixmap
+window.label.focus.pixmap:			.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+window.label.focus.color:			#FFFFFF
+window.label.focus.colorTo:			#DEDEDE
+window.label.focus.textColor:		black
+window.label.unfocus:			flat gradient vertical pixmap
+window.label.unfocus.pixmap:		.fluxbox/pixmaps/fluxaqua/title_unfocused.xpm
+window.label.unfocus.color:			#A2A2A2
+window.label.unfocus.colorTo:		#A2A2A2
+window.label.unfocus.textColor:		#DEDEDE
+
+window.handle.focus:			flat solid
+!window.handle.focus.pixmap:
+window.handle.focus.color:			#FFFFFF
+!window.handle.focus.colorTo:
+window.handle.unfocus:			flat solid
+!window.handle.unfocus.pixmap:
+window.handle.unfocus.color:		#A2A2A2
+!window.handle.unfocus.colorTo:
+
+window.grip.focus:				flat gradient vertical
+!window.grip.focus.pixmap:
+window.grip.focus.color:			rgb:78/91/B0
+window.grip.focus.colorTo:			#DEDEDE
+window.grip.unfocus:			flat gradient vertical
+!window.grip.unfocus.pixmap:
+window.grip.unfocus.color:			#A2A2A2
+window.grip.unfocus.colorTo:		#A2A2A2
+
+window.frame.focusColor:			#DEDEDE
+window.frame.unfocusColor:			#A2A2A2
+
+! SLIT
+
+slit:							flat gradient vertical
+!slit.pixmap:
+slit.color:							#FFFFFF
+slit.colorTo:						#DEDEDE
+slit.borderWidth:					1
+slit.bevelWidth:					0
+slit.borderColor:					#DEDEDE
+
+
+! EXTRA
+
+!frameWidth:					0
+
+!toolbar.button.borderWidth:		0
+!toolbar.button:				flat gradient vertical pixmap
+!toolbar.button.pixmap:			.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+!toolbar.button.color:			#FFFFFF
+!toolbar.button.colorTo:			#DEDEDE
+!toolbar.button.picColor:		black
+
+!!Must be (false) gradient not solid because the unpressed scheme is a (true) gradient
+!toolbar.button.pressed:			flat gradient vertical pixmap
+!toolbar.button.pressed.pixmap:		.fluxbox/pixmaps/fluxaqua/title_unfocused.xpm
+!toolbar.button.pressed.color:		#FFFFFF
+!toolbar.button.pressed.colorTo:		#FFFFFF
+!toolbar.button.pressed.picColor:	black
+
+!toolbar.label:				flat gradient vertical pixmap
+!!Workspace name and clock backgrounds
+!toolbar.label.pixmap: 			.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+!toolbar.label.color:			#FFFFFF
+!toolbar.label.colorTo:			#DEDEDE
+!toolbar.label.textColor:		black
+
+!toolbar.windowLabel:			flat gradient vertical pixmap
+!!Colour behind window title listings
+!toolbar.windowLabel.pixmap: 		.fluxbox/pixmaps/fluxaqua/aquatitle.xpm
+!toolbar.windowLabel.color:			#FFFFFF
+!toolbar.windowLabel.colorTo:		#DEDEDE
+!toolbar.windowLabel.textColor:		black
+
+!window.label.focus:			flat gradient vertical pixmap
+
+!!window.label.pixmap: .fluxbox/pixmaps/fluxaqua/aquatitle.xpm!Invalid pixmap setting?
+
+
+

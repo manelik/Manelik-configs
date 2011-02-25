@@ -1,0 +1,52 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Deco]	{NONE}
+  [Layer]	{2}
+[end]
+[app] (name=opera) (class=Opera) (role=opera-mainwindow#1)
+  [Workspace]	{1}
+[end]
+[app] (name=Navigator) (class=Firefox) (role=browser)
+  [Workspace]	{1}
+  [Position]	(UPPERLEFT)	{0 0}
+  [Deco]	{NONE}
+[end]
+[app] (name=gnome-terminal) (class=Gnome-terminal)
+  [Workspace]	{0}
+  [Position]	(UPPERLEFT)	{0 0}
+  [Deco]	{NONE}
+[end]
+[app] (name=thunar) (class=Thunar)
+  [Workspace]	{0}
+  [Dimensions]	{724 402}
+  [Position]	(UPPERLEFT)	{113 103}
+  [Deco]	{NORMAL}
+[end]
+[app] (name=ygraph) (class=Ygraph)
+  [Deco]	{NONE}
+  [Layer]	{2}
+[end]
+[app] (name=Conky) (class=Conky)
+  [Sticky]	{yes}
+[end]
+[app] (name=amarokapp) (class=Amarokapp) (role=PlayerWindow)
+  [Position]	(UPPERLEFT)	{605 0}
+  [Deco]	{NONE}
+  [Hidden]	{yes}
+  [Sticky]	{yes}
+  [Layer]	{12}
+[end]
+[app] (name=amarokapp) (class=Amarokapp) (role=PlaylistWindow)
+  [Workspace]	{3}
+  [Position]	(UPPERLEFT)	{26 57}
+[end]
+[app] (name=google-chrome) (class=Google-chrome)
+  [Workspace]	{1}
+  [Deco]	{NONE}
+  [Maximized]	{yes}
+  [Fullscreen]	{no}
+[end]
+[app] (name=Songbird) (class=Songbird) (role=Main)
+  [Workspace]	{3}
+  [Position]	(UPPERLEFT)	{0 -1}
+[end]

@@ -1,0 +1,32 @@
+YOU WILL NEED FLUXBOX 0.9X for this theme to display properly!!
+This theme should be uncompressed into you  /home/[USERNAME]/.fluxbox/styles directory.
+
+When you are done the directory structure should look like this:
+
+There are several included backgrounds, uncomment the one you want to use in the theme.cfg
+
+/home
+	/[USERNAME]
+		/.fluxbox
+			/styles
+				/LintherBrushed
+				theme.cfg
+					/pixmaps
+					fblogo-metal.png
+					linther_button_brushed.xpm
+					linther_button_pressed_brushed.xpm
+					linther_close_brushed.xpm
+					linther_close_pressed_brushed.xpm
+					linther_close_unfocused_brushed.xpm
+					linther_iconify_brushed.xpm
+					linther_iconify_pressed_brushed.xpm
+					linther_iconify_unfocused_brushed.xpm
+					linther_maximize_brushed.xpm
+					linther_maximize_pressed_brushed.xpm
+					linther_maximize_unfocused_brushed.xpm
+					linther_menu.xpm
+					linther_shade_brushed.xpm
+					linther_stick_brushed.xpm
+					linther_stick_pressed_brushed.xpm
+					linther_stuck_pressed_brushed.xpm
+					linther_title_brushed.xpm
