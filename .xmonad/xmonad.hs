@@ -132,7 +132,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 main = do
     xmproc <- spawnPipe "xmobar"
     xmonad $ withUrgencyHook dzenUrgencyHook $ defaultConfig{
-      terminal= "Eterm",
+      terminal= "xterm",
       normalBorderColor = "red",
       focusedBorderColor= "green",
       modMask = mod4Mask,
