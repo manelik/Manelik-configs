@@ -15,7 +15,7 @@ import qualified Data.Map        as M
 myManageHook = composeAll
     [ className =? "Gimp"  --> doFloat
     , className =? "Tilda" --> doFloat
-    , className =? "xterm" --> doShift "4"
+    , className =? "xterm" --> doShift "four"
     ]
 
 ------------------------------------------------------------------------
