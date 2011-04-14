@@ -8,6 +8,7 @@ import XMonad.Hooks.SetWMName
 import System.IO
 import Data.Monoid
 import System.Exit
+import XMonad.Actions.CycleWS
  
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -117,9 +118,20 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     --
     [((m .|. modm, k), windows $ f i)
         | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9]
-        , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
+        , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]
+    ]
     ++
- 
+
+    -- mod-[left,right], Switch to [prev,next] workspace
+    --
+    -- mod-shift-[left,right], Send to [prev,next] workspace
+    --
+    [((modm .|. shiftMask, xK_Left   ), shiftToPrev )
+    , ((modm .|. shiftMask, xK_Right ), shiftToNext )
+    , ((modm              , xK_Left  ), prevWS )
+    , ((modm              , xK_Right ), nextWS )
+    ]
+    ++
     --
     -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
     -- mod-shift-{w,e,r}, Move client to screen 1, 2, or 3

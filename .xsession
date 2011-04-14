@@ -25,7 +25,7 @@ export OOO_FORCE_DESKTOP=gnome
 
 
 trayer --edge top --align right --SetDockType true --SetPartialStrut true \
- --expand true --width 10 --transparent true --tint 0x191970 --height 10 &
+ --expand true --width 12 --transparent true --tint 0x191970 --height 10 &
 
 
 eval `gnome-keyring-daemon -s`
@@ -36,10 +36,10 @@ if [ -x /usr/bin/nm-applet ] ; then
    nm-applet --sm-disable &
 fi
  
- 
 
 
 
+xcompmgr -f -C -n -D 1 &
 #gnome-terminal --geometry=80x20 &
 
 #tilda stuff
@@ -48,21 +48,13 @@ cp .tilda/back  .tilda/config_0
 tilda &
 thunar &
 
-#dontzap -d && catastrophe &
 
 #turnaround to pulseaudio bug
-
 #pulseaudio -k
-
-
 #conky &
 
 # xrandr --output LVDS --mode 720x400
 # xrandr --output LVDS --mode 1024x600
-# Set default volume
-
-#amixer sset Master,0 50%
-
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.

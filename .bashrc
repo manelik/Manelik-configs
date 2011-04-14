@@ -103,13 +103,14 @@ fi
 
 alias sshkan='ssh malcubi@132.248.202.193'
 alias sshkanG='ssh -Y malcubi@132.248.202.193'
-alias sim=$HOME/Ollin/ETK/Cactus/simfactory/sim
+alias sim=$HOME/ETK/Cactus/simfactory/sim
 #alias pytwit='/home/josemanuel/git/pytwit/pytwit.py'
-
+alias skypee=/usr/bin/skype-webcam-fixed
+alias cheesee=/usr/bin/cheese-webcam-fixed
 
 #environmentvariables
 export KANB=malcubi@132.248.202.193:/global/malcubi/josemanuel
 
 alias xmaple='export AWT_TOOLKIT=MToolkit && xmaple'
 
-export PATH=$PATH:/home/josemanuel/Maple/bin/
+export PATH=$PATH:/home/manelik/maple11/bin/

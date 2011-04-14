@@ -1,7 +1,7 @@
 Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
        , bgColor = "black"
        , fgColor = "green"
-       , position = Static { xpos = 0 , ypos = 0, width = 922, height = 16 }
+       , position = Static { xpos = 0 , ypos = 0, width = 1204, height = 16 }
        , lowerOnStart = True
        , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
@@ -12,7 +12,7 @@ Config { font = "-misc-fixed-*-*-*-*-10-*-*-*-*-*-*-*"
 		    , Run Battery ["-t","Batt: <left>"] 100
                     , Run Com "sh" ["/home/manelik/bin/gmail.sh"] "mail" 1200
                     , Run Com "sh" ["/home/manelik/bin/volmon.sh"] "volmon" 10
-		    , Run Com "strex" ["-xb"] "strex" 1200
+		    , Run Com "strex" ["-x"] "strex" 1200
 		    ]
        , sepChar = "%"
        , alignSep = "}{"
