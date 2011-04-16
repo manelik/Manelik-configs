@@ -111,6 +111,5 @@ alias cheesee=/usr/bin/cheese-webcam-fixed
 #environmentvariables
 export KANB=malcubi@132.248.202.193:/global/malcubi/josemanuel
 
-alias xmaple='export AWT_TOOLKIT=MToolkit && xmaple'
 
 export PATH=$PATH:/home/manelik/maple11/bin/

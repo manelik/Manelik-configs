@@ -1,16 +1,19 @@
 #!/bin/sh
 #
-# fluxbox startup-script:
+# My startup-script:
 #
 # Lines starting with a '#' are ignored.
+#
+# Currently used to start up a nice and clean session in xmonad
+#
 
 # Change your keymap:
 #xmodmap "/home/manelik/.Xmodmap"
-setxkbmap -option terminate:ctrl_alt_bksp
+#setxkbmap -option terminate:ctrl_alt_bksp
 
-# Set bg over style
-
-fbsetbg -l
+# Set bg over 
+# using fluxbox wrapper
+fbsetbg -r .backgrounds/
 
 # Own gtkrc file
 
@@ -20,6 +23,9 @@ export GTK2_RC_FILES=$HOME/.fluxbox/gtkrc
 
 export OOO_FORCE_DESKTOP=gnome
 
+# Maple fix
+export AWT_TOOLKIT=MToolkit
+export PATH=$PATH:/home/manelik/maple11/bin/
 # Applications you want to run with 
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
 
@@ -36,8 +42,6 @@ if [ -x /usr/bin/nm-applet ] ; then
    nm-applet --sm-disable &
 fi
  
-
-
 
 xcompmgr -f -C -n -D 1 &
 #gnome-terminal --geometry=80x20 &
