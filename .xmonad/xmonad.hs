@@ -9,13 +9,15 @@ import System.IO
 import Data.Monoid
 import System.Exit
 import XMonad.Actions.CycleWS
+import XMonad.Actions.CopyWindow
  
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
 myManageHook = composeAll
     [ className =? "Gimp"  --> doFloat
-    , className =? "Tilda" --> doFloat
+    , className =? "Tilda" --> doFloat 
+--    , className =? "Tilda" --> windows copyToAll 
     , className =? "xterm" --> doShift "4"
     ]
 
@@ -101,6 +103,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- See also the statusBar function from Hooks.DynamicLog.
     --
     -- , ((modm              , xK_b     ), sendMessage ToggleStruts)
+
+    , ((modm              , xK_s ), windows copyToAll) -- @@ Make focused window always visible
+    , ((modm .|. shiftMask, xK_s ), killAllOtherCopies) -- @@ Toggle window state back
+
  
     -- Quit xmonad
     , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))

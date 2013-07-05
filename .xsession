@@ -8,8 +8,10 @@
 #
 
 # Change your keymap:
-#xmodmap "/home/manelik/.Xmodmap"
-#setxkbmap -option terminate:ctrl_alt_bksp
+#
+# Changes to have readily avaliable accents
+xmodmap -e "keycode 48=dead_acute dead_diaeresis"
+xmodmap -e "keycode 49=dead_grave dead_tilde"
 
 # Set bg over 
 # using fluxbox wrapper
@@ -60,9 +62,9 @@ thunar &
 # xrandr --output LVDS --mode 720x400
 # xrandr --output LVDS --mode 1024x600
 
-# And last but not least we start fluxbox.
+# And last but not least we start xmonad.
 # Because it is the last app you have to run it with ''exec'' before it.
 
 exec xmonad
 # or if you want to keep a log:
-#exec fluxbox -log "/home/manelik/.fluxbox/log"
+#exec xmonad -log "/home/manelik/.xmonad/log"

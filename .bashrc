@@ -103,8 +103,7 @@ fi
 
 alias sshkan='ssh malcubi@132.248.202.193'
 alias sshkanG='ssh -Y malcubi@132.248.202.193'
-alias sim=$HOME/ETK/Cactus/simfactory/sim
-#alias pytwit='/home/josemanuel/git/pytwit/pytwit.py'
+alias sim=$HOME/ETKdev/Cactus/simfactory/sim
 alias skypee=/usr/bin/skype-webcam-fixed
 alias cheesee=/usr/bin/cheese-webcam-fixed
 
